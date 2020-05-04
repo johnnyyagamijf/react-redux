@@ -9,20 +9,19 @@ export class Sidebar extends Component {
     return (
       <ul>
         {
-        this.props.usuarios.list.map((user, index) =>(
-        <li key={index}>
-          <label class="container-input">{user}
-          <input 
-        type="radio"  
-        name="user"  
-        value={user}
-        onClick={e => this.props.changeUser(e.target.value)}
-        /> 
-            <span class="checkmark"></span>
-          </label>
-         
-         </li>
-         ))
+          this.props.usuarios.list.map((user, index) =>(
+          <li key={index}>
+            <label class="container-input">{user}
+            <input 
+              type="radio"  
+              name="user"  
+              value={user}
+              onClick={e => this.props.changeUser(e.target.value)}
+            /> 
+              <span class="checkmark"></span>
+            </label>
+          </li>
+          ))
       }
       </ul>
     )

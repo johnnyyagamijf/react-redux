@@ -5,8 +5,11 @@ import './styles.css';
 export class Usuarios extends Component {
   render() {
     return (
-      <div>
-        <h2>Usuário: {this.props.usuarios.active}</h2>
+      <div className="user">
+          <article>
+            <strong>Usuário: {this.props.usuarios.active}</strong>
+            <p>{this.props.usuarios.active}</p>
+          </article>
       </div>
     )
   }

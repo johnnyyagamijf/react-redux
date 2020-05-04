@@ -1,18 +1,13 @@
-html, body{
-  margin: 0;
-  padding: 0;
- box-sizing: border-box; 
-
-}
-
 .container{
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 20vh 70vh 10vh;
-  /* grid-gap:5px; */
-  grid-template-areas: "h a" "m a" "f f"; 
-  background: rgb(25, 24, 31);
-  color: white;
+  width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "h h" "m a" "f f";
+    grid-gap:5px; 
+    color: #fff;
+    background-color: #000;
 }
 
 .header{
@@ -24,12 +19,13 @@ html, body{
   grid-area: m;
   
 }
-
 .aside{ 
   grid-area: a;
+  border: 2px solid  #ccc;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 footer{
-
   grid-area: f;
 }
