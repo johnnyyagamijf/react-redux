@@ -1,0 +1,35 @@
+html, body{
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box; 
+
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
+  /* grid-gap:5px; */
+  grid-template-areas: "h a" "m a" "f f"; 
+  background: rgb(25, 24, 31);
+  color: white;
+}
+
+.header{
+ grid-area: h;
+  text-align: center;
+}
+
+.main{
+  grid-area: m;
+  
+}
+
+.aside{ 
+  grid-area: a;
+}
+
+footer{
+
+  grid-area: f;
+}
